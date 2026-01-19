@@ -1,1 +1,22 @@
+# Phishing Attack Analysis Using Splunk
+
+## Objective
+To analyse security logs in Splunk to identify indicators of a phishing-based attack and understand attacker behaviour.
+
+## Analysis Process
+- Queried authentication and email-related logs in Splunk
+- Identified suspicious login attempts and abnormal activity patterns
+- Correlated events across multiple log sources
+
+## Findings
+- Multiple failed login attempts followed by a successful authentication
+- Indicators consistent with credential harvesting techniques
+
+## MITRE ATT&CK Mapping
+- T1566 – Phishing
+- T1078 – Valid Accounts
+- T1110 – Brute Force
+
+## Conclusion
+This analysis demonstrates how log correlation and framework-based analysis can support early detection of phishing-related incidents.
 
