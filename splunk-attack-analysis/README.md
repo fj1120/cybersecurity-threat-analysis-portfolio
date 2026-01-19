@@ -26,3 +26,24 @@ The objective is to understand how individual alerts and log events can be corre
 - Security reporting and documentation
 ## Outcome
 This project strengthened my practical understanding of log-based threat detection, attack lifecycle analysis, and structured security reporting.
+
+## Example Case Study
+
+### Scenario Overview
+Simulated log data was analysed to identify a potential multi-stage attack involving suspicious authentication activity and command execution.
+
+### Evidence Observed
+- Multiple failed login attempts followed by a successful login
+- Execution of unusual commands shortly after authentication
+- Outbound network connections to uncommon destinations
+
+### Analysis
+The behaviour suggested potential credential compromise followed by post-authentication activity.
+
+### MITRE ATT&CK Mapping
+- T1110 – Brute Force
+- T1059 – Command and Scripting Interpreter
+- T1071 – Application Layer Protocol
+
+### Outcome
+This exercise demonstrated how individual low-risk events can form a meaningful attack chain when correlated.
