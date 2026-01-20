@@ -24,6 +24,7 @@ Aggregates activity by user and host to highlight abnormal patterns
 | ------------ | ------------------------------------------ | --------------- |
 | T1059.001    | PowerShell                                 | Execution       |
 | T1027        | Obfuscated / Encrypted File or Information | Defense Evasion |
+
 These techniques align with commonly observed post-exploitation behaviours in Windows environments.
 
 🧠 Analyst Notes
