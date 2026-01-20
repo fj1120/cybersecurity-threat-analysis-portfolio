@@ -37,11 +37,22 @@ Review risk assessments that translate technical findings into organisational an
 ```text
 cybersecurity-threat-analysis-portfolio/
 ├── README.md
+│
 ├── splunk-attack-analysis/
 │   ├── suspicious_powershell_execution.md
-│   └── incident-analysis-notes.md
-└── governance-risk-analysis/
-    └── powershell_obfuscation_risk_assessment.md
+│   ├── incident-analysis-notes.md
+│   ├── splunk-queries.md
+│   └── sample-logs.txt
+│
+├── governance-risk-analysis/
+│   └── powershell_obfuscation_risk_assessment.md
+│
+├── mitre-mapping/
+│   └── mitre-mapping.md
+│
+├── detection-notes/
+│
+├── learning-reflection/
 ```
 ## 🔍 Key Topics Covered
 
