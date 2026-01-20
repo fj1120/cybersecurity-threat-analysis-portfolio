@@ -1,0 +1,10 @@
+2024-10-12T09:14:23Z host=WIN-ACCT01 user=j.doe
+process=powershell.exe
+command="powershell -enc SQBFAFgA..."
+
+2024-10-12T09:15:01Z host=WIN-ACCT01 user=j.doe
+network_connection dst_ip=185.xxx.xxx.42 dst_port=443
+
+2024-10-12T09:17:44Z host=WIN-ACCT01 user=j.doe
+process=cmd.exe
+command="whoami /all"
