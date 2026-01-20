@@ -46,3 +46,12 @@ Translating raw data into risk-relevant insights
 ⚠️ Disclaimer
 
 This example uses simulated detection logic for educational and portfolio purposes only. No real customer or production data is included
+
+## Detection Context
+This detection focuses on identifying potentially malicious PowerShell activity using encoded commands, which are commonly associated with post-exploitation techniques.
+
+## Investigation Guidance
+Analysts should review:
+- Parent-child process relationships
+- User account privilege levels
+- Frequency and repetition of encoded execution
