@@ -1,4 +1,4 @@
-📘 Cybersecurity Threat Analysis Portfolio
+##📘 Cybersecurity Threat Analysis Portfolio
 
 This repository showcases hands-on cybersecurity analysis work focused on threat detection, incident investigation, and risk assessment, using Splunk and the MITRE ATT&CK framework.
 
@@ -33,14 +33,17 @@ Understand business & governance impact
 → governance-risk-analysis/
 Review risk assessments that translate technical findings into organisational and compliance risks.
 
-📂 Repository Structure
+## 📂 Repository Structure
+
+```text
 cybersecurity-threat-analysis-portfolio/
 ├── README.md
 ├── splunk-attack-analysis/
 │   ├── suspicious_powershell_execution.md
 │   └── incident-analysis-notes.md
-├── governance-risk-analysis/
-│   └── powershell_obfuscation_risk_assessment.md
+└── governance-risk-analysis/
+    └── powershell_obfuscation_risk_assessment.md
+
 
 🔍 Key Topics Covered
 
