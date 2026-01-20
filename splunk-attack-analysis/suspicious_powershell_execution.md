@@ -1,14 +1,14 @@
 🛡️ Use Case: Suspicious PowerShell Execution Detection
-Scenario
 
-This use case demonstrates how PowerShell execution logs can be analysed to identify potentially malicious behaviour, such as encoded commands commonly used in post-exploitation activities.
+### Scenario  
+This use case simulates a security analyst reviewing PowerShell execution logs to identify potentially malicious behaviour within a corporate Windows environment.
 
-The objective is to simulate a basic detection scenario and map it to the MITRE ATT&CK framework.
+The focus is on detecting encoded PowerShell commands, which are commonly associated with malware execution, credential access, or lateral movement.
 
 Splunk Query (SPL Example)
 index=security_logs sourcetype=windows_powershell
 | search CommandLine="*-EncodedCommand*"
-| stats count by User, ComputerName, CommandLine
+| stats count by User, ComputerName, CommandLine, ParentProcessName
 | sort - count
 
 Explanation:
@@ -24,6 +24,7 @@ Aggregates activity by user and host to highlight abnormal patterns
 | ------------ | ------------------------------------------ | --------------- |
 | T1059.001    | PowerShell                                 | Execution       |
 | T1027        | Obfuscated / Encrypted File or Information | Defense Evasion |
+These techniques align with commonly observed post-exploitation behaviours in Windows environments.
 
 🧠 Analyst Notes
 
