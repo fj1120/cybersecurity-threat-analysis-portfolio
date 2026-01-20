@@ -1,10 +1,10 @@
-##📘 Cybersecurity Threat Analysis Portfolio
+## 📘 Cybersecurity Threat Analysis Portfolio
 
 This repository showcases hands-on cybersecurity analysis work focused on threat detection, incident investigation, and risk assessment, using Splunk and the MITRE ATT&CK framework.
 
 It is designed to demonstrate practical skills relevant to Cybersecurity Intern, SOC Analyst (Junior), and Cybersecurity Consulting / Risk roles.
 
-🎯 Purpose of This Portfolio
+## 🎯 Purpose of This Portfolio
 
 The purpose of this repository is to demonstrate how raw security events can be:
 
@@ -18,7 +18,7 @@ Assessed for technical, operational, and business risk impact
 
 This portfolio focuses on analyst thinking and structured investigation, not just tooling.
 
-🧭 How to Navigate This Repository
+## 🧭 How to Navigate This Repository
 
 If you are reviewing this repository for the first time:
 
@@ -34,7 +34,6 @@ Understand business & governance impact
 Review risk assessments that translate technical findings into organisational and compliance risks.
 
 ## 📂 Repository Structure
-
 ```text
 cybersecurity-threat-analysis-portfolio/
 ├── README.md
@@ -43,9 +42,8 @@ cybersecurity-threat-analysis-portfolio/
 │   └── incident-analysis-notes.md
 └── governance-risk-analysis/
     └── powershell_obfuscation_risk_assessment.md
-
-
-🔍 Key Topics Covered
+```
+## 🔍 Key Topics Covered
 
 Suspicious PowerShell execution and obfuscation techniques
 
@@ -59,7 +57,7 @@ False positive considerations and response recommendations
 
 Translation of technical threats into business and compliance risks
 
-🧠 Frameworks & Tools Used
+## 🧠 Frameworks & Tools Used
 
 SIEM: Splunk
 
@@ -75,7 +73,7 @@ Incident response lifecycle
 
 Risk-based security analysis
 
-👩‍💻 Professional Relevance
+## 👩‍💻 Professional Relevance
 
 This portfolio is aligned with entry-level and early-career roles such as:
 
@@ -89,14 +87,14 @@ Governance, Risk & Compliance (GRC) roles
 
 It demonstrates analytical thinking, structured documentation, and security maturity awareness, rather than purely academic exercises.
 
-📌 Notes
+## 📌 Notes
 
 All examples are based on simulated or anonymised scenarios.
 
 No real organisational data is included.
 
-The focus is on methodology, reasoning, and analyst's mindset.
+The focus is on methodology, reasoning, and the analyst's mindset.
 
-📬 Contact
+## 📬 Contact
 
 If you have any questions regarding this portfolio or would like to discuss the work further, feel free to reach out via GitHub.
