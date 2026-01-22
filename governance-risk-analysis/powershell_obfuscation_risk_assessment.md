@@ -1,45 +1,70 @@
-# Risk Assessment – Obfuscated PowerShell Usage
+# Risk Assessment: PowerShell Obfuscation Techniques
 
-## Risk Context
-PowerShell is a legitimate administrative tool widely used in enterprise Windows environments. However, when combined with obfuscation techniques such as Base64 encoding, it poses a significant security and governance risk.
+## Risk Description
+PowerShell obfuscation techniques present a significant security risk as they enable threat actors to bypass 
+traditional security controls, conceal malicious intent, and execute unauthorized actions within enterprise environments.
 
-## Identified Risk
-The execution of encoded PowerShell commands reduces visibility for security monitoring tools and increases the likelihood of undetected malicious activity.
+These techniques are commonly leveraged in targeted attacks and are frequently observed in conjunction with 
+advanced persistent threat (APT) activity.
+
+---
 
 ## Threat Scenario
-An attacker may leverage encoded PowerShell to:
-- Execute malware without dropping files to disk
-- Bypass basic signature-based detection
-- Maintain persistence or establish command-and-control channels
+An attacker gains an initial foothold via phishing or credential compromise and executes obfuscated PowerShell 
+commands to:
+- Download and execute additional payloads
+- Establish persistence
+- Evade endpoint detection mechanisms
 
-## Potential Business Impact
-- Unauthorized system access
-- Data confidentiality breaches
-- Regulatory non-compliance (e.g., ISO 27001 control failures)
-- Reputational damage
+Due to the use of legitimate system tools, such activity may remain undetected without behavioural monitoring.
 
-## Existing Controls
-- Endpoint antivirus software
-- Basic command-line logging
+---
 
-## Control Gaps
-- Lack of advanced PowerShell logging
-- Limited behavioural detection rules
-- Insufficient user privilege restrictions
+## Risk Impact Assessment
 
-## Risk Rating
-| Likelihood | Impact | Overall Risk |
-|----------|--------|--------------|
-| Medium   | High   | Medium-High  |
+| Impact Area              | Description |
+|--------------------------|-------------|
+| Confidentiality          | Potential exposure of credentials and sensitive data |
+| Integrity                | Unauthorized modification of system configurations |
+| Availability             | Risk of service disruption through follow-on attacks |
+| Regulatory Compliance    | Potential breach of security monitoring requirements |
 
-## Recommended Control Improvements
-- Enable enhanced PowerShell logging (Script Block Logging)
-- Apply least privilege principles for administrative tools
-- Implement behaviour-based detection rules
-- Regular review of endpoint execution telemetry
+---
 
-## Governance Alignment
-This risk assessment aligns with:
-- ISO/IEC 27001 A.12 (Operations Security)
-- ISO/IEC 27001 A.9 (Access Control)
-- NIST CSF – Detect & Respond functions
+## Likelihood Assessment
+- **Likelihood:** Medium to High  
+PowerShell is widely available by default in Windows environments, and obfuscation techniques are well-documented 
+and easily accessible to attackers.
+
+---
+
+## Control Gaps Identified
+- Over-reliance on signature-based detection
+- Insufficient monitoring of PowerShell command-line arguments
+- Limited correlation between endpoint and network telemetry
+
+---
+
+## Recommended Mitigations
+
+### Technical Controls
+- Implement enhanced PowerShell logging (Script Block Logging, Module Logging)
+- Deploy behavioural-based detection rules
+- Correlate endpoint telemetry with network activity
+
+### Governance & Process Controls
+- Establish clear acceptable-use policies for PowerShell
+- Enforce role-based access for administrative scripting
+- Regularly review detection coverage against MITRE ATT&CK techniques
+
+---
+
+## Residual Risk
+Even with controls in place, some residual risk remains due to the legitimate use of PowerShell for administration.
+Continuous monitoring and periodic risk reassessment are required.
+
+---
+
+## Conclusion
+PowerShell obfuscation represents a material cyber risk that spans both technical and governance domains.
+Effective mitigation requires a combination of detection engineering, risk management, and policy enforcement.
