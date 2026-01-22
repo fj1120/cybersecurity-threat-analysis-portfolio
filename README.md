@@ -1,42 +1,33 @@
-## 📘 Cybersecurity Threat Analysis Portfolio
+# Cybersecurity Threat Analysis Portfolio
 
-This repository showcases hands-on cybersecurity analysis work focused on threat detection, incident investigation, and risk assessment, using Splunk and the MITRE ATT&CK framework.
+This repository showcases practical cybersecurity threat detection, incident analysis, and risk assessment work, 
+focusing on real-world attacker techniques, detection logic, and governance considerations.
 
-It is designed to demonstrate practical skills relevant to Cybersecurity Intern, SOC Analyst (Junior), and Cybersecurity Consulting / Risk roles.
+The portfolio is designed to demonstrate hands-on analytical capability aligned with SOC operations, 
+cybersecurity consulting, and governance, risk, and compliance (GRC) roles.
 
-## 🎯 Purpose of This Portfolio
+---
 
-The purpose of this repository is to demonstrate how raw security events can be:
+## 📌 Project Scope
 
-Detected using SIEM tools (Splunk)
+This portfolio includes:
+- Detection engineering using Splunk SPL
+- Incident analysis and analyst reasoning
+- MITRE ATT&CK technique mapping
+- Governance and risk assessment of attacker behaviour
+- Clear documentation suitable for technical and non-technical stakeholders
 
-Analysed from a security analyst perspective
+All examples use redacted or simulated data for academic and portfolio purposes.
 
-Mapped to the MITRE ATT&CK framework
-
-Assessed for technical, operational, and business risk impact
-
-This portfolio focuses on analyst thinking and structured investigation, not just tooling.
-
-## 🧭 How to Navigate This Repository
-
-If you are reviewing this repository for the first time:
-
-Start with detection logic
-→ splunk-attack-analysis/
-Review Splunk queries and detection rationale for suspicious activities.
-
-Follow the analyst investigation workflow
-→ Incident analysis notes that demonstrate how alerts are triaged, investigated, and assessed.
-
-Understand business & governance impact
-→ governance-risk-analysis/
-Review risk assessments that translate technical findings into organisational and compliance risks.
+---
 
 ## 📂 Repository Structure
+
 ```text
 cybersecurity-threat-analysis-portfolio/
-├── README.md
+│
+├── detection-analysis/
+│   └── powershell_obfuscation_detection.md
 │
 ├── splunk-attack-analysis/
 │   ├── suspicious_powershell_execution.md
@@ -50,62 +41,38 @@ cybersecurity-threat-analysis-portfolio/
 ├── mitre-mapping/
 │   └── mitre-mapping.md
 │
-├── detection-notes/
-│
 ├── learning-reflection/
+│   └── analyst_learning_notes.md
+│
+└── disclaimer.md
 ```
-## 🔍 Key Topics Covered
+---
 
-Suspicious PowerShell execution and obfuscation techniques
+# Key Technical Focus Areas
 
-MITRE ATT&CK mapping (Execution, Defense Evasion, Command & Control)
+## Detection & Analysis
+- PowerShell obfuscation detection
+- Behaviour-based Splunk detection logic
+- Analyst-level incident triage reasoning
 
-SIEM-based detection logic using Splunk SPL
+## MITRE ATT&CK Alignment
+- Defense Evasion (T1027)
+- Execution – PowerShell (T1059.001)
 
-Incident triage and investigation methodology
+## Governance & Risk
+- Risk-based assessment of attacker techniques
+- Control gap identification
+- Technical and procedural mitigation recommendations
 
-False positive considerations and response recommendations
+---
 
-Translation of technical threats into business and compliance risks
+# Intended Audience
+- Cyber Security Analyst / SOC Analyst
+- Cyber Security Consulting Analyst
+- Governance, Risk & Compliance (GRC)
+- Graduate / Entry-level Cyber Security roles
 
-## 🧠 Frameworks & Tools Used
+---
 
-SIEM: Splunk
-
-Threat Framework: MITRE ATT&CK
-
-Security Concepts:
-
-Post-exploitation activity
-
-Defense evasion techniques
-
-Incident response lifecycle
-
-Risk-based security analysis
-
-## 👩‍💻 Professional Relevance
-
-This portfolio is aligned with entry-level and early-career roles such as:
-
-Cybersecurity Intern / Trainee
-
-SOC Analyst (Junior)
-
-Cybersecurity Consulting Analyst
-
-Governance, Risk & Compliance (GRC) roles
-
-It demonstrates analytical thinking, structured documentation, and security maturity awareness, rather than purely academic exercises.
-
-## 📌 Notes
-
-All examples are based on simulated or anonymised scenarios.
-
-No real organisational data is included.
-
-The focus is on methodology, reasoning, and the analyst's mindset.
-
-## 📬 Contact
-
-If you have any questions regarding this portfolio or would like to discuss the work further, feel free to reach out via GitHub.
+# Disclaimer
+This repository is for educational and portfolio demonstration purposes only. All logs, detections, and scenarios are anonymised or simulated and do not represent real organisational data.
